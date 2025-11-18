@@ -58,6 +58,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.DELETE, "/admin/permissions/{id}").hasAuthority("delete_permission")
 
                         .requestMatchers(HttpMethod.GET, "/admin/users").hasAuthority("list_user")
+                        .requestMatchers(HttpMethod.GET, "/student/call").hasAuthority("list_user")
                         .requestMatchers(HttpMethod.POST, "/admin/update-password").hasAuthority("update_user_password")
                         .requestMatchers(HttpMethod.POST, "/admin/addroletouser").hasAuthority("update_user_role")
                         .requestMatchers(HttpMethod.DELETE, "/admin/users/{id}").hasAuthority("delete_user")
