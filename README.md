@@ -52,7 +52,7 @@ The service starts on `http://localhost:9090`.
 1. **Register** via `POST /auth/register` to create a user (password gets encoded, default role assigned).
 2. **Login** via `POST /auth/login` with JSON:
    ```json
-   { "username": "admin", "password": "secret" }
+   { "username": "admin", "password": "admin" }
    ```
    The response contains a JWT token.
 3. For secured endpoints, add `Authorization: Bearer <token>` header.
